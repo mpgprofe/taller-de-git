@@ -1,7 +1,10 @@
 <?php
 //Autor: Manuel Paniagua <mpaniagua@iestrassierra.com>
+
+require('HolaMundo.php');
+
 print "Introduce tu nombre: ";
 $nombre = trim(fgets(STDIN));
-@print "Hola, {$nombre}\n";
-;
+print new HolaMundo($nombre);;
+
 ?>
